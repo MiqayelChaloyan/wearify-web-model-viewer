@@ -1,0 +1,85 @@
+.container-scann {
+    width: 318.65px;
+    margin: 40px auto;
+}
+
+.title-scanning {
+    color: #0C0D34;
+    font-size: 33.28px;
+    line-height: 39.71px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.text-intro {
+    color: #0C0D34;
+    font-size: 14.92px;
+    line-height: 17.81px;
+    text-align: center;
+    font-weight: 500;
+    width: 50%;
+    margin: 15px auto;
+}
+
+.QR-img-style {
+    width: 217.78px;
+    height: 217.78px;
+}
+
+.image-qr-row {
+    display: flex;
+    justify-content: center;
+}
+
+.step {
+    color: #0C0D34;
+    font-size: 21.19px;
+    line-height: 32.52px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.line-scann {
+    width: 320px;
+    height: 3.45px;
+    background-color: #0C0D34;
+    opacity: 0.1;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1536px) {
+    .warning {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .warning {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .warning {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .warning {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .warning {
+        font-size: 15px;
+    }
+}

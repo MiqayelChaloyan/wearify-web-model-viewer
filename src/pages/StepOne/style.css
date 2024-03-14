@@ -1,0 +1,73 @@
+.button-right {
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+}
+
+.models {
+    left: 0;
+    background: white;
+    padding: 10px 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 206px;
+    border-radius: 0 0 59.44px 59.44px;
+}
+
+
+
+@media screen and (max-width: 1536px) {
+    .button-right {
+        bottom: 34%;
+        right: 7%;
+    }
+
+    .models {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .button-right {
+        bottom: 34%;
+        right: 7%;
+    }
+
+    .models {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button-right {
+        bottom: 34%;
+        right: 7%;
+    }
+
+    .models {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button-right {
+        bottom: 34%;
+        right: 7%;
+    }
+
+    .models {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .button-right {
+        bottom: 34%;
+        right: 7%;
+    }
+
+    .models {
+        height: 180px;
+    }
+}

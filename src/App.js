@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useCallback, useState } from 'react';
 
-function App() {
+import Navigation from './navgation';
+
+import { ThemeProvider } from './context';
+
+const App = () => {
+
+  const [open, setOpen] = useState(false);
+
+  const handleSubmit = () =>  setOpen(true);
+
+  const handleClose = useCallback(() => setOpen(false), []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <ThemeProvider>
+      <button type="button" onClick={handleSubmit} className='button'>
+        open modal
+      </button>
+
+      <Navigation open={open} handleClose={handleClose} />
+    </ThemeProvider>
+  )
+};
 
 export default App;

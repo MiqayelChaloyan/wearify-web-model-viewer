@@ -1,0 +1,79 @@
+.buttons-group-person {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 42px;
+}
+
+.button-back-person {
+    width: 123px;
+    height: 50px;
+    font-size: 18.91px;
+    line-height: 22.56px;
+    font-weight: 500;
+    background-color: #F6F6F6;
+    border-radius: 60px;
+    cursor: pointer;
+    color: #2ECDCD;
+    border: 1px solid white;
+}
+
+.button-next-person {
+    width: 123px;
+    height: 50px;
+    font-size: 18.91px;
+    line-height: 22.56px;
+    font-weight: 500;
+    background-color: #2ECDCD;
+    border-radius: 60px;
+    cursor: pointer;
+    color: #F6F6F6;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1536px) {
+    .warning {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .button-next-person {
+        width: 100px;
+        height: 45px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button-next-person {
+        width: 100px;
+        height: 45px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button-next-person {
+        width: 100px;
+        height: 45px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .button-next-person {
+        width: 100px;
+        height: 45px;
+        font-size: 15px;
+    }
+}
