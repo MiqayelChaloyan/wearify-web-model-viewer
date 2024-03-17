@@ -1,6 +1,6 @@
-/* .container-not-found {
-   margin: 150px auto
-} */
+.container-not-found {
+    margin: 105px auto;
+}
 
 .not-found {
     width: 241px;
@@ -42,7 +42,16 @@
 
 @media screen and (max-width: 1536px) {
     .warning {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .not-found {
+        width: 200px;
+        height: 200px;
+    }
+
+    .description {
+        font-size: 14px;
     }
 }
 
@@ -50,11 +59,30 @@
     .warning {
         font-size: 24px;
     }
+
+    .not-found {
+        width: 200px;
+        height: 200px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .warning {
         font-size: 17px;
+    }
+
+    .not-found {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .description {
+        font-size: 12px;
     }
 }
 
@@ -62,10 +90,20 @@
     .warning {
         font-size: 20px;
     }
+
+    .not-found {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .warning {
         font-size: 15px;
+    }
+
+    .not-found {
+        width: 200px;
+        height: 200px;
     }
 }

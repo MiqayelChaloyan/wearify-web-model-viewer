@@ -1,6 +1,6 @@
 import url from '../assets/images/logo.png';
 
-import modelPath from '../assets/model/Rectangle.png';
+import modelPath from '../assets/model/glasses.png';
 import modelPathTwo from '../assets/model/Rectangle 161.png';
 import modelPathTree from '../assets/model/Rectangle 168.png';
 import QR from '../assets/images/QR.png';

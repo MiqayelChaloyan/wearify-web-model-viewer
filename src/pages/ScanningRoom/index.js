@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import { QR } from "../../constants";
+import useTheme from "../../hooks/useTheme";
 
 import './style.css';
 
-const ScanningRoom = () => (
+const ScanningRoom = () => {
+    const { setTheme } = useTheme();
+
+    useEffect(() =>  setTheme('linear-gradient(#F2F1F8, #97E0E3)'), []);
+
+    return (
     <div className='container-scann'>
         <h2 className='title-scanning'>
             🖐️ Welcome to your scanning room!
@@ -20,5 +27,6 @@ const ScanningRoom = () => (
         <p className='step'>👕   Find your size</p>
     </div>
 );
+    }
 
 export default ScanningRoom;

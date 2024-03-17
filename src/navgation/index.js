@@ -9,10 +9,10 @@ import Splash from "../pages/Splash";
 import ModeViewer from "../components/model-viewer";
 import useTheme from "../hooks/useTheme";
 
-const Navigation = ({ open, handleClose }) => {
+const Navigation = () => {
     const { setTheme } = useTheme();
 
-    const { currentStepIndex, step, back, next } =
+    const { currentStepIndex, step, next } =
         useMultistepForm([
             <Splash />,
             <ModeViewer/>
@@ -36,7 +36,7 @@ const Navigation = ({ open, handleClose }) => {
 
 
     return (
-        <Modal open={open} handleClose={handleClose} currentStepIndex={currentStepIndex}>
+        <Modal currentStepIndex={currentStepIndex}>
             {step}
         </Modal>
     )

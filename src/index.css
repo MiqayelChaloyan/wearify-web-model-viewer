@@ -70,7 +70,7 @@
 /*=============== BASE ===============*/
 body {
   font-weight: 500;
-  background-color: var(--first-color);
+  background-color: white;
 }
 
 button {
@@ -90,11 +90,6 @@ ul li {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.container-view {
-  width: 385px;
-  margin: 0 auto;
 }
 
 input[type="text"] {
@@ -136,7 +131,7 @@ button:focus {
 
 model-viewer {
   width: 100%;
-  height: 400px;
+  height: 250px;
 }
 
 /*swiper slide */
@@ -161,7 +156,7 @@ model-viewer {
 }
 
 /* TODO */
-.button{
+.button {
   width: 123px;
   height: 50px;
   font-size: 18.91px;
@@ -182,46 +177,57 @@ model-viewer {
 @media screen and (max-width: 1536px) {
   model-viewer {
     width: 100%;
-    height: 400px;
+    height: 250px;
   }
 }
 
 @media screen and (max-width: 1280px) {
   model-viewer {
     width: 100%;
-    height: 329px;
+    height: 250px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio:0) {
   model-viewer {
     width: 100%;
-    height: 400px;
+    height: 200px;
   }
 }
 
 @media screen and (max-width: 768px) {
   model-viewer {
     width: 100%;
-    height: 300px;
+    height: 250px;
   }
 }
 
 @media screen and (max-width: 640px) {
   model-viewer {
     width: 100%;
-    height: 280px;
+    height: 250px;
   }
 }
 
-@media screen and ( max-width: 475px ) {
+@media screen and (max-width: 475px) {
   model-viewer {
     width: 100%;
-    height: 280px;
+    height: 214px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  model-viewer {
+    width: 100%;
+    height: 129px;
   }
 }
 
 
 model-viewer::part(default-progress-bar) {
+  display: none;
+}
+
+model-viewer::part(default-ar-button) {
   display: none;
 }

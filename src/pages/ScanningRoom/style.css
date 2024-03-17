@@ -5,8 +5,8 @@
 
 .title-scanning {
     color: #0C0D34;
-    font-size: 33.28px;
-    line-height: 39.71px;
+    font-size: 28px;
+    line-height: 27px;
     text-align: center;
     font-weight: 700;
 }
@@ -22,8 +22,8 @@
 }
 
 .QR-img-style {
-    width: 217.78px;
-    height: 217.78px;
+    width: 150px;
+    height: 150px;
 }
 
 .image-qr-row {
@@ -33,8 +33,8 @@
 
 .step {
     color: #0C0D34;
-    font-size: 21.19px;
-    line-height: 32.52px;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
     font-weight: 500;
 }
@@ -50,36 +50,80 @@
 
 
 
-
-
-
-
 @media screen and (max-width: 1536px) {
-    .warning {
-        font-size: 30px;
+    .title-scanning {
+        color: #0C0D34;
+        font-size: 28px;
+        line-height: 27px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .line-scann {
+        margin: 25px auto;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .warning {
-        font-size: 24px;
+    .title-scanning {
+        color: #0C0D34;
+        font-size: 28px;
+        line-height: 27px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+
+    .line-scann {
+        margin: 20px auto;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .warning {
-        font-size: 17px;
+    .title-scanning {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    .QR-img-style {
+        width: 120px;
+        height: 120px;
+    }
+
+    .step {
+        font-size: 12px;
+        line-height: 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .warning {
-        font-size: 20px;
+    .title-scanning {
+        color: #0C0D34;
+        font-size: 28px;
+        line-height: 27px;
+        text-align: center;
+        font-weight: 700;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .warning {
-        font-size: 15px;
+    .title-scanning {
+        color: #0C0D34;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .step {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-scann {
+        width: 318.65px;
+        margin: 15px auto;
     }
 }

@@ -8,9 +8,9 @@
 }
 
 .button-back-person {
-    width: 123px;
-    height: 50px;
-    font-size: 18.91px;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
     line-height: 22.56px;
     font-weight: 500;
     background-color: #F6F6F6;
@@ -21,9 +21,9 @@
 }
 
 .button-next-person {
-    width: 123px;
-    height: 50px;
-    font-size: 18.91px;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
     line-height: 22.56px;
     font-weight: 500;
     background-color: #2ECDCD;
@@ -34,12 +34,6 @@
 }
 
 
-
-
-
-
-
-
 @media screen and (max-width: 1536px) {
     .warning {
         font-size: 30px;
@@ -47,7 +41,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .button-next-person {
+    .button-next-person, .button-back-person  {
         width: 100px;
         height: 45px;
         font-size: 15px;
@@ -55,7 +49,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .button-next-person {
+    .button-next-person, .button-back-person  {
         width: 100px;
         height: 45px;
         font-size: 15px;
@@ -63,7 +57,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .button-next-person {
+    .button-next-person, .button-back-person  {
         width: 100px;
         height: 45px;
         font-size: 15px;
@@ -71,9 +65,21 @@
 }
 
 @media screen and (max-width: 640px) {
-    .button-next-person {
+    .button-next-person, .button-back-person  {
         width: 100px;
-        height: 45px;
-        font-size: 15px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button-next-person {
+        width: 79px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .buttons-group-person {
+        margin-top: 23px;
     }
 }

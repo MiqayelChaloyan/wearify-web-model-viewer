@@ -1,6 +1,6 @@
 .column {
-    width: 123px;
-    height: 160px;
+    width: 120px;
+    height: 145px;
     border-radius: 10px;
     background-color: #D4D7D7
 }
@@ -12,23 +12,14 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1536px) {
     .column {
-        width: 123px;
-        height: 160px;
+        width: 105px;
+        height: 125px;
         border-radius: 10px;
         background-color: #D4D7D7
     }
-    
+
     .model-image {
         width: 100%;
         height: 130px;
@@ -38,12 +29,12 @@
 
 @media screen and (max-width: 1280px) {
     .column {
-        width: 120px;
-        height: 148px;
+        width: 105px;
+        height: 125px;
         border-radius: 10px;
         background-color: #D4D7D7
     }
-    
+
     .model-image {
         width: 100%;
         height: 130px;
@@ -51,14 +42,14 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio:0) {
     .column {
-        width: 123px;
-        height: 160px;
+        width: 100px;
+        height: 102px;    
         border-radius: 10px;
         background-color: #D4D7D7
     }
-    
+
     .model-image {
         width: 100%;
         height: 130px;
@@ -68,12 +59,12 @@
 
 @media screen and (max-width: 768px) {
     .column {
-        width: 123px;
-        height: 160px;
+        width: 117px;
+        height: 150px;
         border-radius: 10px;
         background-color: #D4D7D7
     }
-    
+
     .model-image {
         width: 100%;
         height: 130px;
@@ -83,12 +74,25 @@
 
 @media screen and (max-width: 640px) {
     .column {
-        width: 110px;
-        height: 140px;    
+        width: 97px;
+        height: 115px;
+    }
+
+    .model-image {
+        width: 100%;
+        height: 130px;
+        padding: 17px 0
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .column {
+        width: 75px;
+        height: 93px;
         border-radius: 10px;
         background-color: #D4D7D7
     }
-    
+
     .model-image {
         width: 100%;
         height: 130px;

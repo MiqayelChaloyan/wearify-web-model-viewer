@@ -4,37 +4,34 @@ import Models from '../../ui/Models';
 
 import ButtonIcon from '../../icons/Button'
 
+import useWindowSize from '../../hooks/useWindowSize';
+import useTheme from '../../hooks/useTheme';
+
 import { modelPath, modelPathTwo, modelPathTree } from '../../constants';
 
 import './style.css';
-import useWindowSize from '../../hooks/useWindowSize';
 
 
 const models = [
     {
         id: 1,
-        imgPath: modelPath,
-        glbPath: '/model/shoe-draco.glb'
+        imgPath: 'https://drive.google.com/file/d/1SnKj-GmRfGuWvVJFO6D4dqxSVs2aXvAW/view?usp=sharing',
+        glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/Seen_low_2K.glb'
     },
     {
         id: 2,
-        imgPath: modelPathTwo,
-        glbPath: '/model/model.glb'
+        imgPath: 'https://drive.google.com/file/d/1SnKj-GmRfGuWvVJFO6D4dqxSVs2aXvAW/view?usp=sharing',
+        glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/sneakers__hi_my_name_is__3d_model.glb'
     },
     {
         id: 3,
-        imgPath: modelPathTree,
-        glbPath: '/model/jaket.glb'
+        imgPath: 'https://drive.google.com/file/d/1SnKj-GmRfGuWvVJFO6D4dqxSVs2aXvAW/view?usp=sharing',
+        glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/sneakers__hi_my_name_is__3d_model.glb'
     },
     {
         id: 4,
-        imgPath: modelPath,
-        glbPath: '/model/Seen_low_2K.glb'
-    },
-    {
-        id: 5,
-        imgPath: modelPathTwo,
-        glbPath: '/model/sneakers__hi_my_name_is__3d_model.glb'
+        imgPath: 'https://drive.google.com/file/d/1SnKj-GmRfGuWvVJFO6D4dqxSVs2aXvAW/view?usp=sharing',
+        glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/sneakers__hi_my_name_is__3d_model.glb'
     }
 ];
 
@@ -43,13 +40,9 @@ const StepOne = () => {
     const [uriGlb, setUriGlb] = useState(models[0].glbPath)
     const [hide, setHide] = useState(false);
     const window = useWindowSize();
+    const { setTheme } = useTheme();
 
-    // useEffect(() => {
-    //     const element = document.getElementById('default-ar-button');
-    //     console.log(element); // Check if the element is logged correctly
-    //     // element.style.display = 'none'; // Uncomment this line after confirming element is logged correctly
-    // }, []); // Ensure this dependency array is correct for your use case
-    
+    useEffect(() =>  setTheme('#EDEDED'), [])
 
     const handleSubmit = (index) => {
         setUriGlb(models[index].glbPath)
@@ -59,7 +52,7 @@ const StepOne = () => {
 
     return (
         <div className='container-view'>
-            <div>
+            <div className='viewer'>
                 <model-viewer
                     src={uriGlb}
                     seamless-poster
@@ -78,23 +71,25 @@ const StepOne = () => {
                     min-field-of-view="1deg"
                     width="1800px"
                     disable-zoom
+                    loading="eager"
                 >
                 </model-viewer>
             </div>
 
-
+            <div className='icon-button'>
             {
                 hide ? (
                     <button className='button-right' onClick={handleHide}>
-                        <ButtonIcon width={window.width > 1024 ? 34 : 20} height={window.width > 1024 ? 34 : 20} fill='rgb(212, 215, 215)' />
+                        <ButtonIcon width={window.width > 1280 ? 30 : 20} height={window.width > 1280 ? 30 : 20} fill='rgb(212, 215, 215)' />
                     </button>
                 ) : (
 
                     <button className='button-right' onClick={handleHide}>
-                        <ButtonIcon width={window.width > 1024 ? 34 : 20} height={window.width > 1024 ? 34 : 20} fill='#2ECDCD' />
+                        <ButtonIcon width={window.width > 1280 ? 30 : 20} height={window.width > 1280 ? 30 : 20} fill='#2ECDCD' />
                     </button>
                 )
             }
+            </div>
 
             {
                 hide && (

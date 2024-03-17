@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60%;
+    margin-top: 55%;
 }
 
 .img {
@@ -10,39 +10,3 @@
     height: 137px;
 }
 
-
-
-
-
-
-
-
-@media screen and (max-width: 1536px) {
-    .warning {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .warning {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .warning {
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .warning {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .warning {
-        font-size: 15px;
-    }
-}

@@ -1,20 +1,28 @@
+.container-view {
+    width: 100%;
+}
+
 .button-right {
-    position: absolute;
-    bottom: 30%;
-    right: 10%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #2ECDCD;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.icon-button{
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .models {
-    left: 0;
     background: white;
     padding: 10px 10px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 206px;
     border-radius: 0 0 59.44px 59.44px;
+    height: 184px;
 }
-
 
 
 @media screen and (max-width: 1536px) {
@@ -24,7 +32,7 @@
     }
 
     .models {
-        height: 190px;
+        height: 162px;
     }
 }
 
@@ -35,18 +43,18 @@
     }
 
     .models {
-        height: 190px;
+        height: 173px;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio:0) {
     .button-right {
         bottom: 34%;
         right: 7%;
     }
 
     .models {
-        height: 190px;
+        height: 135px;
     }
 }
 
@@ -68,6 +76,12 @@
     }
 
     .models {
-        height: 180px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .models {
+        height: 132px;
     }
 }

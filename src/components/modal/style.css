@@ -1,43 +1,37 @@
 .modal {
     position: fixed;
     margin: auto;
-    width: 478px;
-    height: 734px;
+    width: 415px;
+    height: 600px;
     transform: translate3d(0%, 0, 0);
-    /* transition: all ease 0.1s; */
     border-radius: 59.44px;
     top: 90px;
+    display: none;
 }
 
-.modal-button {
+.close-modal {
     border: none;
     background: none;
     cursor: pointer;
-    color: black;
+    color: #2ECDCD;
     font-size: 20px;
     margin-top: 20px;
 }
 
-.modal-content {
-    display: grid;
-}
 
 .modal-header {
-    border-bottom-color: #eeeeee;
-    margin-left: auto;
     margin-right: 37px;
-    height: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
-
-
-
 
 
 /* @media */
 @media screen and (max-width: 1536px) {
     .modal {
-        width: 478px;
-        height: 734px;
+        width: 415px;
+        height: 580px;
     }
 
     .modal-button {
@@ -47,8 +41,8 @@
 
 @media screen and (max-width: 1280px) {
     .modal {
-        width: 439px;
-        height: 669px;
+        width: 400px;
+        height: 580px;
     }
 
     .modal-button {
@@ -56,10 +50,10 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio:0) {
     .modal {
-        width: 439px;
-        height: 669px;
+        width: 350px;
+        height: 495px;
     }
 
     .modal-button {
@@ -69,8 +63,8 @@
 
 @media screen and (max-width: 768px) {
     .modal {
-        width: 439px;
-        height: 669px;
+        width: 400px;
+        height: 600px;
     }
 
     .modal-button {
@@ -80,11 +74,23 @@
 
 @media screen and (max-width: 640px) {
     .modal {
-        width: 95%;
-        height: 590px;
+        width: 80%;
+        height: 550px;    
     }
 
     .modal-button {
         margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .modal {
+        width: 95%;
+        height: 384px;
+    }
+
+    .close-modal {
+        font-size: 12px;
     }
 }
