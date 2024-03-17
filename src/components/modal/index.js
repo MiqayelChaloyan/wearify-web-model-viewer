@@ -4,12 +4,16 @@ import NotFound from '../../pages/NotFound';
 
 import useTheme from '../../hooks/useTheme';
 import useNavigatorOnLine from '../../hooks/useNavigationStatus';
+import useWindowSize from '../../hooks/useWindowSize';
+
+import CloseIcon from '../../icons/Close'
 
 import './style.css';
 
 
 export const Modal = React.memo(({ children, currentStepIndex }) => {
     const status = useNavigatorOnLine();
+    const window = useWindowSize();
     const { theme } = useTheme();
 
     const handleClose = () => document.getElementById("modal-viewer").style.display = 'none';
@@ -21,7 +25,10 @@ export const Modal = React.memo(({ children, currentStepIndex }) => {
                 <div className="modal-content">
                     {currentStepIndex !== 0 && currentStepIndex < 2 &&
                         <div className="modal-header">
-                            <button type="button" id="close-modal" className='close-modal' onClick={handleClose}>✖</button>
+                            <button type="button" id="close-modal" className='close-modal' onClick={handleClose}>
+                            <CloseIcon width={window.width > 1280 ? 30 : 20} height={window.width > 1280 ? 30 : 20} fill='#2ECDCD'/>
+                            </button>
+                            
                         </div>
                     }
                     {children}

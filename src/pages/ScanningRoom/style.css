@@ -119,6 +119,10 @@
         font-size: 12px;
         line-height: 20px;
     }
+
+    .line-scann {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 768px) {
