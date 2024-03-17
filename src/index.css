@@ -73,14 +73,6 @@ body {
   background-color: white;
 }
 
-button {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  font-family: 'SF Pro Display', sans-serif;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -154,24 +146,6 @@ model-viewer {
   justify-content: center;
   align-items: center;
 }
-
-/* TODO */
-.button {
-  width: 123px;
-  height: 50px;
-  font-size: 18.91px;
-  line-height: 22.56px;
-  font-weight: 500;
-  background-color: #2ECDCD;
-  border-radius: 60px;
-  cursor: pointer;
-  color: #F6F6F6;
-  border: 1px solid white;
-}
-
-
-
-
 
 
 @media screen and (max-width: 1536px) {

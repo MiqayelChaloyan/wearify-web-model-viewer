@@ -16,6 +16,7 @@
     color: #2ECDCD;
     font-size: 20px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 
@@ -75,7 +76,8 @@
 @media screen and (max-width: 640px) {
     .modal {
         width: 80%;
-        height: 550px;    
+        height: 515px;  
+        left: 15px;  
     }
 
     .modal-button {

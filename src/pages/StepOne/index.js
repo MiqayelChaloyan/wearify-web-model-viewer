@@ -15,22 +15,22 @@ import './style.css';
 const models = [
     {
         id: 1,
-        imgPath: 'https://drive.google.com/file/d/1SnKj-GmRfGuWvVJFO6D4dqxSVs2aXvAW/view?usp=sharing',
+        imgPath: 'https://drive.google.com/thumbnail?id=1hfGs4TRWrjhzX8cb3-WDtHYv9qwjD_GA',
         glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/Seen_low_2K.glb'
     },
     {
         id: 2,
-        imgPath: 'https://drive.google.com/file/d/1SnKj-GmRfGuWvVJFO6D4dqxSVs2aXvAW/view?usp=sharing',
+        imgPath: 'https://drive.google.com/thumbnail?id=1hfGs4TRWrjhzX8cb3-WDtHYv9qwjD_GA',
         glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/sneakers__hi_my_name_is__3d_model.glb'
     },
     {
         id: 3,
-        imgPath: 'https://drive.google.com/file/d/1SnKj-GmRfGuWvVJFO6D4dqxSVs2aXvAW/view?usp=sharing',
+        imgPath: 'https://drive.google.com/thumbnail?id=1hfGs4TRWrjhzX8cb3-WDtHYv9qwjD_GA',
         glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/sneakers__hi_my_name_is__3d_model.glb'
     },
     {
         id: 4,
-        imgPath: 'https://drive.google.com/file/d/1SnKj-GmRfGuWvVJFO6D4dqxSVs2aXvAW/view?usp=sharing',
+        imgPath: 'https://drive.google.com/thumbnail?id=1hfGs4TRWrjhzX8cb3-WDtHYv9qwjD_GA',
         glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/sneakers__hi_my_name_is__3d_model.glb'
     }
 ];
