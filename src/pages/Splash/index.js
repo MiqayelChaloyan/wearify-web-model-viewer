@@ -11,9 +11,11 @@ const Splash = () => {
 
     return (
     <div className='container-splash'>
-        <img src={url} alt='logo' className='img' />
+        <img src='https://drive.google.com/thumbnail?id=1vT4xy5UQYQ4s4AwPdnliDVkk6LKJvDw2' alt='logo' className='img' />
     </div>
 )
     }
 
 export default Splash;
+
+

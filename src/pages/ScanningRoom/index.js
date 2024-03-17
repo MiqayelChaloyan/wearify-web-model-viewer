@@ -19,7 +19,7 @@ const ScanningRoom = () => {
             open camera in mobile!
         </p>
         <div className='image-qr-row'>
-            <img src={QR} alt='QR' className='QR-img-style' />
+            <img src='https://drive.google.com/thumbnail?id=1tZmCnJusU4kICrkktGJcrvsdvrMsjArd' alt='QR' className='QR-img-style' />
         </div>
         <div className='line-scann' />
         <p className='step'>📱   Take 2 photos</p>

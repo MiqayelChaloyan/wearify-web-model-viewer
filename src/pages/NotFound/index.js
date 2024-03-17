@@ -11,7 +11,7 @@ const NotFound = ({ handleClose }) => {
 
     return (
     <div className="container-not-found">
-        <img className="not-found" src={notFound} alt='notFound' />
+        <img className="not-found" src='https://drive.google.com/thumbnail?id=1n-bg08T4LeazeVHaDbkyPMBAlpFXHbOA' alt='notFound' />
         <h1 className="warning">Resource not found!</h1>
         <p className="description">The resource requested could not found on the server</p>
         <button

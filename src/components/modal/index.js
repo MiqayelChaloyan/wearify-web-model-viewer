@@ -26,7 +26,7 @@ export const Modal = React.memo(({ children, currentStepIndex }) => {
                     {currentStepIndex !== 0 && currentStepIndex < 2 &&
                         <div className="modal-header">
                             <button type="button" id="close-modal" className='close-modal' onClick={handleClose}>
-                            <CloseIcon width={window.width > 1280 ? 30 : 20} height={window.width > 1280 ? 30 : 20} fill='#2ECDCD'/>
+                            <CloseIcon width={window.width > 1280 ? 20 : 15} height={window.width > 1280 ? 20 : 15} fill='#2ECDCD'/>
                             </button>
                             
                         </div>

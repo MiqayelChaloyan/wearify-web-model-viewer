@@ -151,21 +151,21 @@ model-viewer {
 @media screen and (max-width: 1536px) {
   model-viewer {
     width: 100%;
-    height: 250px;
+    height: 230px;
   }
 }
 
 @media screen and (max-width: 1280px) {
   model-viewer {
     width: 100%;
-    height: 250px;
+    height: 220px;
   }
 }
 
 @media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio:0) {
   model-viewer {
     width: 100%;
-    height: 200px;
+    height: 170px;
   }
 }
 
