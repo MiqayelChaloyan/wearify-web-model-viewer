@@ -23,12 +23,13 @@ export const Modal = React.memo(({ children, currentStepIndex }) => {
         <div id='modal-viewer' className="modal" style={{ right: '10px', background: theme, border: currentStepIndex === 0 ? '2px solid rgb(12, 13, 52)' : '2px solid #2ECDCD' }}>
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
-                    {currentStepIndex !== 0 && currentStepIndex < 2 &&
+                    {
+                        currentStepIndex !== 0 && currentStepIndex < 2 &&
                         <div className="modal-header">
                             <button type="button" id="close-modal" className='close-modal' onClick={handleClose}>
-                            <CloseIcon width={window.width > 1280 ? 20 : 15} height={window.width > 1280 ? 20 : 15} fill='#2ECDCD'/>
+                                <CloseIcon width={window.width > 1536 ? 20 : 15} height={window.width > 1280 ? 20 : 15} fill='#2ECDCD' />
                             </button>
-                            
+
                         </div>
                     }
                     {children}
@@ -36,7 +37,7 @@ export const Modal = React.memo(({ children, currentStepIndex }) => {
             </div>
         </div>
     ) : (
-        <div className="modal" style={{ right: '10px', background: 'white' }}>
+        <div id='modal-viewer' className="modal" style={{ right: '10px', background: '#EDEDED', border: '2px solid #2ECDCD' }}>
             <div className="modal-content">
                 <NotFound handleClose={handleClose} />
             </div>

@@ -1,17 +1,17 @@
 import { useEffect } from "react";
-import { notFound } from "../../constants";
+import { notFoundUrl } from "../../constants";
+import useTheme from "../../hooks/useTheme";
 
 import './style.css';
-import useTheme from "../../hooks/useTheme";
 
 const NotFound = ({ handleClose }) => {
     const { setTheme } = useTheme();
 
-    useEffect(() => setTheme('#EDEDED'), []);
+    // useEffect(() => setTheme('#EDEDED'), []);
 
     return (
     <div className="container-not-found">
-        <img className="not-found" src='https://drive.google.com/thumbnail?id=1n-bg08T4LeazeVHaDbkyPMBAlpFXHbOA' alt='notFound' />
+        <img className="not-found" src={notFoundUrl} alt='notFound' />
         <h1 className="warning">Resource not found!</h1>
         <p className="description">The resource requested could not found on the server</p>
         <button

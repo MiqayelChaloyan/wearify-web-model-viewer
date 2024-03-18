@@ -38,7 +38,7 @@ const models = [
 
 const StepOne = () => {
     const [uriGlb, setUriGlb] = useState(models[0].glbPath)
-    const [hide, setHide] = useState(false);
+    const [hide, setHide] = useState(true);
     const window = useWindowSize();
     const { setTheme } = useTheme();
 
@@ -49,6 +49,13 @@ const StepOne = () => {
     }
 
     const handleHide = () => setHide(!hide)
+
+
+    useEffect(() => {
+       const id = document.getElementById("modal-viewer").productId;
+       console.log(id);
+    }, [])
+
 
     return (
         <div className='container-view'>
@@ -80,12 +87,12 @@ const StepOne = () => {
             {
                 hide ? (
                     <button className='button-right' onClick={handleHide}>
-                        <ButtonIcon width={window.width > 1280 ? 30 : 20} height={window.width > 1280 ? 30 : 20} fill='rgb(212, 215, 215)' />
+                        <ButtonIcon width={window.width > 1536 ? 30 : 20} height={window.width > 1536 ? 30 : 20} fill='rgb(212, 215, 215)' />
                     </button>
                 ) : (
 
                     <button className='button-right' onClick={handleHide}>
-                        <ButtonIcon width={window.width > 1280 ? 30 : 20} height={window.width > 1280 ? 30 : 20} fill='#2ECDCD' />
+                        <ButtonIcon width={window.width > 1536 ? 30 : 20} height={window.width > 1536 ? 30 : 20} fill='#2ECDCD' />
                     </button>
                 )
             }

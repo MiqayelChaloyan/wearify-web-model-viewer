@@ -1,57 +1,28 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import StepOne from "../../pages/StepOne";
-import ScanningRoom from "../../pages/ScanningRoom";
+import { hrefGitHub } from "../../constants";
 
 import './style.css';
 
-const steps = ['Step One', 'Step Two'];
+const steps = ['Model viewer'];
 
 const ModeViewer = () => {
     const [activeStep, setActiveStep] = useState(0);
 
-    const _renderStepContent = (step, callback) => {
+    const _renderStepContent = (step) => {
         switch (step) {
             case 0:
                 return <StepOne />;
-            case 1:
-                return <ScanningRoom />;
-        }
-    };
-
-    const _handleNext = (values, actions) => {
-        if (activeStep === steps.length - 1) {
-            console.log('END');
-        } else {
-            setActiveStep(activeStep + 1);
-        }
-    };
-
-    const _handleBack = (e) => {
-        e.preventDefault();
-
-        if (activeStep === 0) {
-            console.log('START');
-        } else {
-            setActiveStep(activeStep - 1);
         }
     };
 
     return (
         <div>
-            <div className='buttons-group-person' style={{ justifyContent: activeStep !== 0 ? 'space-between' : 'flex-end' }}>
-                {activeStep !== 0 &&
-                    <button type='button' onClick={_handleBack} className='button-back-person'>
-                        {'< Back'}
-                    </button>
-                }
-                {activeStep === 0 &&
-                    <button onClick={_handleNext} type='submit' className='button-next-person'>
-                        Try-On ME
-                    </button>
-                }
+            <div className='buttons-group-person'>
+                <a target='_blank' className='button-try-on' href={hrefGitHub}>Try-On ME</a>
             </div>
-            {_renderStepContent(activeStep, _handleNext)}
+            {_renderStepContent(activeStep)}
         </div>
     )
 };
