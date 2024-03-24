@@ -1,8 +1,11 @@
 .column {
-    height: 135px;
-    width: 110px;
-    border-radius: 10px;
-    background-color: #D4D7D7
+    height: 140px;
+    width: 120px;
+    border-radius: 40px;
+    background-color: #D4D7D7;
+    transition: .5s;
+    border: 1px solid #CDCDD3;
+    cursor: pointer;
 }
 
 .model-image {
@@ -11,12 +14,21 @@
     padding: 17px 0
 }
 
+.active-slide {
+    background-color: #D4D7D7;
+    height: 140px;
+    width: 120px;
+    transition: .5s;
+    border: 1px solid #2ECDCD;
+    cursor: default;
+}
+
 
 @media screen and (max-width: 1536px) {
     .column {
         width: 98px;
         height: 120px;
-    
+        border-radius: 30px;
     }
 
     .model-image {
@@ -43,6 +55,7 @@
     .column {
         width: 81px;
         height: 90px;
+        border-radius: 32px;
     }
 
     .model-image {

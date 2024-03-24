@@ -15,14 +15,14 @@
     margin-right: 20px;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
 }
 
 .models {
-    background: white;
-    padding: 10px 10px;
-    border-radius: 0 0 59.44px 59.44px;
-    height: 174px;
+    background: transparent;
+    padding: 12px;
+    border-radius: 0 0 50px 50px;
+    height: 166px;
 }
 
 

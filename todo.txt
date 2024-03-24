@@ -1,0 +1,12 @@
+
+TODO
+3. border radius experiment (60,40)
+4. bottom slider animation, redius 60
+5. make square inside parts, border/ color setup
+6. hover
+
+
+
+DONE
+1. border remove, add shadow to window
+2. changes buttoon size (try-on me), move x button to the top-left part
