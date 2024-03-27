@@ -1,13 +1,14 @@
 import { useState } from "react";
 
 import StepOne from "../../pages/StepOne";
+import useWindowSize from "../../hooks/useWindowSize";
+
 import { hrefGitHub } from "../../constants";
+
 import CloseIcon from '../../icons/Close'
 
 import './style.css';
-import useWindowSize from "../../hooks/useWindowSize";
 
-const steps = ['Model viewer'];
 
 const ModeViewer = () => {
     const [activeStep, setActiveStep] = useState(0);

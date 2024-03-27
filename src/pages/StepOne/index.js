@@ -7,37 +7,25 @@ import ButtonIcon from '../../icons/Button'
 import useWindowSize from '../../hooks/useWindowSize';
 import useTheme from '../../hooks/useTheme';
 
-import { modelPath, modelPathTwo, modelPathTree } from '../../constants';
-
-import { useAnimate, stagger, motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 import './style.css';
 
-const test = 'https://ln5.sync.com/dl/3124f7f40/ex7qg5u5-iyih27jg-i87iub2j-9msfjjhu'
-
-
+// const test = 'https://drive.google.com/thumbnail?id=1BHcn0KMNltk8KvOYXy9poL4PzQAJHJYH'
 const models = [
     {
         id: 1,
-        imgPath: 'https://drive.google.com/thumbnail?id=1hfGs4TRWrjhzX8cb3-WDtHYv9qwjD_GA',
-        glbPath: '/model/himnakan.glb' // '/model/Seen_low_2K.glb'
+        imgPath: 'https://drive.google.com/thumbnail?id=1Z1cpmOWbLS0nUJZtK7o8SNKbLpzmhxgV',
+        glbPath: 'https://cdn.shopify.com/3d/models/o/3f860c1bdd5c6eb2/black.glb'
     },
     {
         id: 2,
-        imgPath: 'https://drive.google.com/thumbnail?id=1hfGs4TRWrjhzX8cb3-WDtHYv9qwjD_GA',
-        glbPath: test // '/model/Seen_low_2K.glb'
+        imgPath: 'https://drive.google.com/thumbnail?id=1A6b7nYJwCEaXFnqVMIS9015DV7IZMwJI',
+        glbPath: 'https://cdn.shopify.com/3d/models/o/faf39a667c643fa5/bluegreen.glb'
     },
-    {
-        id: 3,
-        imgPath: 'https://drive.google.com/thumbnail?id=1hfGs4TRWrjhzX8cb3-WDtHYv9qwjD_GA',
-        glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/sneakers__hi_my_name_is__3d_model.glb'
-    },
-    {
-        id: 4,
-        imgPath: 'https://drive.google.com/thumbnail?id=1hfGs4TRWrjhzX8cb3-WDtHYv9qwjD_GA',
-        glbPath: 'https://cdn.shopify.com/3d/models/o/db55743e2752e826/model.glb' // '/model/sneakers__hi_my_name_is__3d_model.glb'
-    }
 ];
+
+
 
 const StepOne = () => {
     const [uriGlb, setUriGlb] = useState(models[0].glbPath)
@@ -45,14 +33,11 @@ const StepOne = () => {
     const window = useWindowSize();
     const { setTheme } = useTheme();
 
-
-    ///
     const [activeIndex, setActiveIndex] = useState(0);
 
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
 
-  
+
 
     useEffect(() => setTheme('#EDEDED'), [])
 
@@ -128,7 +113,7 @@ const StepOne = () => {
                         }}
                         viewport={{ once: true }}
                     >
-                        <Models models={models} onClick={handleSubmit} activeIndex={activeIndex}/>
+                        <Models models={models} onClick={handleSubmit} activeIndex={activeIndex} />
                     </motion.div>
                 )
             }

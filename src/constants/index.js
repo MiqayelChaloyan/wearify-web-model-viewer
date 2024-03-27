@@ -1,4 +1,4 @@
-import modelPath from '../assets/model/glasses.png';
+// import modelPath from '../assets/model/glasses.png';
 
 // GitHub link
 const hrefGitHub = 'https://nazeli-terpetrosyan.github.io/Twinz_AR/';
@@ -10,6 +10,6 @@ const notFoundUrl = 'https://drive.google.com/thumbnail?id=11vnfLOoZc-qODi-GPmIf
 export {
     hrefGitHub,
     logoUrl,
-    modelPath,
+    // modelPath,
     notFoundUrl
 }

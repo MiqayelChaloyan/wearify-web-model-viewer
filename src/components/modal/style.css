@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 320px) {
     .modal {
-        width: 95%;
+        width: 85%;
         height: 348px;
     }
 }

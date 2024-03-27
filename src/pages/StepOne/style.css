@@ -15,14 +15,15 @@
     margin-right: 20px;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .models {
-    background: transparent;
     padding: 12px;
     border-radius: 0 0 50px 50px;
     height: 166px;
+    /* background: linear-gradient(#f1f1f1, #dbdbdb);
+    backdrop-filter: brightness(0.7); */
 }
 
 
@@ -33,7 +34,7 @@
     }
 
     .models {
-        height: 170px;
+        height: 149px;
     }
 }
 
@@ -44,7 +45,11 @@
     }
 
     .models {
-        height: 170px;
+        height: 149px;
+    }
+
+    .icon-button{
+        margin-bottom: 25px;
     }
 }
 
@@ -55,7 +60,11 @@
     }
 
     .models {
-        height: 125px;
+        height: 120px;
+    }
+
+    .icon-button{
+        margin-bottom: 25px;
     }
 }
 
@@ -66,7 +75,11 @@
     }
 
     .models {
-        height: 124px;
+        height: 120px;
+    }
+
+    .icon-button{
+        margin-bottom: 25px;
     }
 }
 
@@ -79,6 +92,10 @@
     .models {
         height: 135px;
     }
+
+    .icon-button{
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width: 635px) {
@@ -88,11 +105,11 @@
     }
 
     .icon-button{
-        margin-bottom: 12px;
+        margin-bottom: 25px;
     }
 
     .models {
-        height: 137px;
+        height: 130px;
     }
 }
 
@@ -103,13 +120,21 @@
     }
 
     .models {
-        height: 130px;
+        height: 122px;
+    }
+
+    .icon-button {
+        margin-bottom: 26px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .models {
-        height: 132px;
+        height: 122px;
+    }
+
+    .icon-button {
+        margin-bottom: 30px;
     }
 }
 
