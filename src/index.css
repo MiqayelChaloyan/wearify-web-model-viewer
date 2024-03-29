@@ -127,6 +127,11 @@ model-viewer {
   height: 250px;
 }
 
+.userInput {
+  cursor: grab;
+  touch-action: none !important;
+}
+
 /*swiper slide */
 
 .swiper-slide img {
