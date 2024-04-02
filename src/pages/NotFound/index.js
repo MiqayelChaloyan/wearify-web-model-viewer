@@ -11,9 +11,8 @@ const NotFound = ({ handleClose }) => {
 
     return (
     <div className="container-not-found">
-        <img className="not-found" src={notFoundUrl} alt='notFound' />
-        <h1 className="warning">Resource not found!</h1>
-        <p className="description">The resource requested could not found on the server</p>
+        {/* <img className="not-found" src={notFoundUrl} alt='notFound' /> */}
+        <h2 className="warning">Please, check your internet connection!</h2>
         <button
             onClick={handleClose}
             className='modal-button'
