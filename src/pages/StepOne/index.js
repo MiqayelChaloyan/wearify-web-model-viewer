@@ -14,14 +14,14 @@ import './style.css';
 const models = [
     {
         id: 1,
-        imgPath: 'https://drive.google.com/thumbnail?id=1Z1cpmOWbLS0nUJZtK7o8SNKbLpzmhxgV',
-        glbPath: 'https://cdn.shopify.com/3d/models/o/58d9e69190bab792/black.glb'//'/models/black.glb'//'https://cdn.shopify.com/3d/models/o/3f860c1bdd5c6eb2/black.glb'
+        imgPath: 'https://drive.google.com/thumbnail?id=1rHnMmArBGamBFGZc2BWnWVGt0grheE_3',
+        glbPath: 'https://cdn.shopify.com/3d/models/o/e98302644c8c004e/pregomesh.glb' //'/models/pregomesh.glb'
     },
-    {
-        id: 2,
-        imgPath: 'https://drive.google.com/thumbnail?id=1A6b7nYJwCEaXFnqVMIS9015DV7IZMwJI',
-        glbPath: 'https://cdn.shopify.com/3d/models/o/105f53f651be9cc6/bluegreen.glb'//'/models/bluegreen.glb'//'https://cdn.shopify.com/3d/models/o/faf39a667c643fa5/bluegreen.glb'
-    },
+    // {
+    //     id: 2,
+    //     imgPath: 'https://drive.google.com/thumbnail?id=1A6b7nYJwCEaXFnqVMIS9015DV7IZMwJI',
+    //     glbPath: 'https://cdn.shopify.com/3d/models/o/105f53f651be9cc6/bluegreen.glb'//'/models/bluegreen.glb'//'https://cdn.shopify.com/3d/models/o/faf39a667c643fa5/bluegreen.glb'
+    // },
 ];
 
 
