@@ -12,10 +12,22 @@ import useTheme from "../hooks/useTheme";
 const Navigation = () => {
     const { setTheme } = useTheme();
 
+
+    // // TODO
+    const modalViewer = document.getElementById('modal-viewer');
+    const productId = modalViewer?.productId;
+
+    if (productId) {
+        console.log(`Product ID is: ${productId}`);
+    } else {
+        console.log('No product ID found');
+    }
+    // ///////
+
     const { currentStepIndex, step, next } =
         useMultistepForm([
             <Splash />,
-            <ModeViewer/>
+            <ModeViewer productId={productId}/>
         ]);
 
     useEffect(() => {

@@ -3,14 +3,17 @@ import { useState } from "react";
 import StepOne from "../../pages/StepOne";
 import useWindowSize from "../../hooks/useWindowSize";
 
-import { hrefGitHub } from "../../constants";
+import { 
+    hrefGitHubPregomesh,
+    hrefGitHubTwinz 
+} from "../../constants";
 
 import CloseIcon from '../../icons/Close'
 
 import './style.css';
 
 
-const ModeViewer = () => {
+const ModeViewer = ({ productId }) => {
     const [activeStep, setActiveStep] = useState(0);
     const window = useWindowSize();
 
@@ -20,7 +23,7 @@ const ModeViewer = () => {
     const _renderStepContent = (step) => {
         switch (step) {
             case 0:
-                return <StepOne />;
+                return <StepOne productId={productId} />;
         }
     };
 
@@ -30,7 +33,7 @@ const ModeViewer = () => {
                 <button type="button" id="close-modal" className='close-modal' onClick={handleClose}>
                     <CloseIcon width={window.width > 1536 ? 20 : 15} height={window.width > 1280 ? 20 : 15} fill='#2ECDCD' />
                 </button>
-                <a target='_blank' className='button-try-on' href={hrefGitHub}>Try-On ME</a>
+                <a target='_blank' className='button-try-on' href={productId == '9392277192988' ? hrefGitHubTwinz : hrefGitHubPregomesh}>Try-On ME</a>
             </div>
             {_renderStepContent(activeStep)}
         </div>

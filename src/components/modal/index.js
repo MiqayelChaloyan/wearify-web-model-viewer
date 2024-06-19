@@ -7,13 +7,15 @@ import useNavigatorOnLine from '../../hooks/useNavigationStatus';
 
 import './style.css';
 
+// const twinz = '9392277192988'
+// const pregomesh = '9167250129180'
+// const ANANYANSneakers = '9392027009308'
 
 export const Modal = React.memo(({ children, currentStepIndex }) => {
     const status = useNavigatorOnLine();
     const { theme } = useTheme();
 
     const handleClose = () => document.getElementById("modal-viewer").style.display = 'none';
-
 
     return status ? (
         <div id='modal-viewer' className="modal" style={{ right: '10px', background: theme }}>

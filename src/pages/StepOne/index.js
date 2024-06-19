@@ -10,15 +10,21 @@ import useTheme from '../../hooks/useTheme';
 import { motion } from "framer-motion";
 
 import './style.css';
-
+//https://cdn.shopify.com/3d/models/o/58d9e69190bab792/black.glb
+// import s from '../../../public/models/black.glb'
 const models = [
     {
-        id: 1,
+        id: 9167250129180,
         imgPath: 'https://drive.google.com/thumbnail?id=1rHnMmArBGamBFGZc2BWnWVGt0grheE_3',
-        glbPath: 'https://cdn.shopify.com/3d/models/o/e98302644c8c004e/pregomesh.glb' //'/models/pregomesh.glb'
+        glbPath: 'https://cdn.shopify.com/3d/models/o/e98302644c8c004e/pregomesh.glb'
     },
     // {
-    //     id: 2,
+    //     id: 9392277192988,
+    //     imgPath: 'https://drive.google.com/thumbnail?id=1Z1cpmOWbLS0nUJZtK7o8SNKbLpzmhxgV',
+    //     glbPath:   './' ,//'/models/black.glb'//'https://cdn.shopify.com/3d/models/o/3f860c1bdd5c6eb2/black.glb'
+    // },
+    // {
+    //     id: 9392277192988,
     //     imgPath: 'https://drive.google.com/thumbnail?id=1A6b7nYJwCEaXFnqVMIS9015DV7IZMwJI',
     //     glbPath: 'https://cdn.shopify.com/3d/models/o/105f53f651be9cc6/bluegreen.glb'//'/models/bluegreen.glb'//'https://cdn.shopify.com/3d/models/o/faf39a667c643fa5/bluegreen.glb'
     // },
@@ -26,8 +32,9 @@ const models = [
 
 
 
-const StepOne = () => {
-    const [uriGlb, setUriGlb] = useState(models[0].glbPath)
+const StepOne = ({ productId }) => {
+    const yourModels = models.filter(model => model.id == 9167250129180);
+    const [uriGlb, setUriGlb] = useState(yourModels[0].glbPath)
     const [hide, setHide] = useState(true);
     const window = useWindowSize();
     const { setTheme } = useTheme();
@@ -36,22 +43,20 @@ const StepOne = () => {
 
     const ref = useRef(null);
 
-
-
     useEffect(() => setTheme('#EDEDED'), [])
 
     const handleSubmit = (index) => {
-        setUriGlb(models[index].glbPath)
+        setUriGlb(yourModels[index].glbPath)
         setActiveIndex(index)
     }
 
     const handleHide = () => setHide(!hide)
 
 
-    useEffect(() => {
-        const id = document.getElementById("modal-viewer").productId;
-        console.log(id);
-    }, [])
+    // useEffect(() => {
+    //     const id = document.getElementById("modal-viewer").productId;
+    //     console.log(id);
+    // }, [])
 
 
     return (
@@ -76,7 +81,7 @@ const StepOne = () => {
                     width="1800px"
                     disable-zoom
                     loading="eager"
-                    // poster="https://test-aorist-bucket.s3.amazonaws.com/images/artwork/900x600/187.1.jpg"
+                // poster="https://test-aorist-bucket.s3.amazonaws.com/images/artwork/900x600/187.1.jpg"
 
                 >
                 </model-viewer>
@@ -113,7 +118,7 @@ const StepOne = () => {
                         }}
                         viewport={{ once: true }}
                     >
-                        <Models models={models} onClick={handleSubmit} activeIndex={activeIndex} />
+                        <Models models={yourModels} onClick={handleSubmit} activeIndex={activeIndex} />
                     </motion.div>
                 )
             }
